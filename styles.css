@@ -1,0 +1,108 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+    height: 100vh;
+  }
+  .grid-container1{
+      display: grid;
+      padding: 30px 15px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+      grid-template-areas:
+      "a a1 a2 a3"
+      "b b b c" ;
+      height: 70vh;
+      gap: 90px 15px;
+  }
+  
+
+  .a{
+      grid-area: a;
+      background-color:#626ed4 ;
+      height: 15vh;
+      
+  }
+  .a1{
+    grid-area: a1;
+    background-color:#626ed4 ;
+    height: 15vh;
+
+  }
+  .a2{
+    grid-area: a2;
+    background-color:#626ed4 ;
+    height: 15vh;
+
+  }
+  .a3{
+    grid-area: a3;
+    background-color:#626ed4 ;
+    height: 15vh;
+
+  }
+  
+  .b{
+      grid-area: b;
+      background-color: #2e3648;
+      height:60vh;
+  }
+  .c{
+      grid-area: c;
+      background-color: #2e3648;
+  }
+  
+  /* Give every child element its grid name */
+  .header {
+    grid-area: header;
+    background-color:  #94a0ac;
+  }
+  
+  .sidenav {
+    grid-area: sidenav;
+    background-color: #2e3648 ;
+  }
+  .sidenav1{
+      margin-left: 90px;
+      color: #626ed4 
+      ;
+  }
+  .sidenav2{
+    
+      margin-left: 10px;
+      color:white;
+      font-size: medium;
+      line-height: 1.5;
+  }
+  .main {
+    grid-area: main;
+    background-color: #041d1f;
+    
+
+  }
+  .main1{
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #94a0ac;
+  }
+  .column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    
+    
+    
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
